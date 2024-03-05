@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 400px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+ 
+  <div class="container">
+    <h2>Customer Login</h2>
+    <form action="customer_login.php" method="post">
+      <label for="customer_email">Email:</label>
+      <input type="email" id="customer_email" name="customer_email" required>
+
+      <label for="customer_password">Password:</label>
+      <input type="password" id="customer_password" name="customer_password" required>
+
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  
+  <div class="container" style="margin-left: 20px;">
+    <h2>Car Rental Agency Login</h2>
+    <form action="agency_login.php" method="post">
+      <label for="agency_email">Email:</label>
+      <input type="email" id="agency_email" name="agency_email" required>
+
+      <label for="agency_password">Password:</label>
+      <input type="password" id="agency_password" name="agency_password" required>
+
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+</body>
+</html>

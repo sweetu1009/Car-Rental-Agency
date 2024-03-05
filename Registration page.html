@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Page</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 400px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    
+    .customer-container {
+      background-color: #fff;
+    }
+
+    .customer-container button {
+      background-color: #3498db;
+      color: #fff;
+    }
+
+    .customer-container button:hover {
+      background-color: #2980b9;
+    }
+
+    
+    .agency-container {
+      background-color: #ecf0f1;
+    }
+
+    .agency-container button {
+      background-color: #e74c3c;
+      color: #fff;
+    }
+
+    .agency-container button:hover {
+      background-color: #c0392b;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <div class="container customer-container">
+    <h2>Customer Registration</h2>
+    <form action="customer_registration.php" method="post">
+      <label for="customer_name">Name:</label>
+      <input type="text" id="customer_name" name="customer_name" required>
+
+      <label for="customer_email">Email:</label>
+      <input type="email" id="customer_email" name="customer_email" required>
+
+      <label for="customer_password">Password:</label>
+      <input type="password" id="customer_password" name="customer_password" required>
+
+      <button type="submit">Register</button>
+    </form>
+   <a href="C:\Users\VED SHARMA\Dropbox\PC\Desktop\Sheetal\agency registration.html" >Agency Registration</a>
+  </div>
+
+  
+</body>
+</html>

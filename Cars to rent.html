@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Available Cars to Rent</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    .car-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 600px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    .car-details {
+      margin-bottom: 10px;
+    }
+
+    .rent-options {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+<h1> Available Cars to Rent </h1><br><br>
+  
+  <br><br><div class="car-container">
+    <h1>Available Cars to Rent</h1>
+
+    
+    <div class="car-details">
+      <p>Vehicle Model: Car A</p>
+      <p>Vehicle Number: ABC123</p>
+      <p>Seating Capacity: 4</p>
+      <p>Rent per Day: $50</p>
+    </div>
+
+    
+    <div class="rent-options">
+      <label for="rent_days">Number of Days:</label>
+      <select id="rent_days" name="rent_days">
+        <option value="1">1 day</option>
+        <option value="2">2 days</option>
+        
+      </select>
+
+      <label for="start_date">Start Date:</label>
+      <input type="date" id="start_date" name="start_date">
+    </div>
+
+    
+    <button onclick="rentCar()">Rent Car</button>
+  </div>
+
+  
+  <div class="car-container">
+    <div class="car-details">
+      <p>Vehicle Model: Car B</p>
+      <p>Vehicle Number: XYZ789</p>
+      <p>Seating Capacity: 5</p>
+      <p>Rent per Day: $60</p>
+    </div>
+
+    <div class="rent-options">
+      <label for="rent_days_car2">Number of Days:</label>
+      <select id="rent_days_car2" name="rent_days_car2">
+        <option value="1">1 day</option>
+        <option value="2">2 days</option>
+        
+      </select>
+
+      <label for="start_date_car2">Start Date:</label>
+      <input type="date" id="start_date_car2" name="start_date_car2">
+    </div>
+
+    <button onclick="rentCar()">Rent Car</button>
+  </div>
+
+  
+
+  <script>
+    function rentCar() {
+      
+      alert('Rent Car functionality will be implemented here.');
+    }
+  </script>
+
+</body>
+</html>
